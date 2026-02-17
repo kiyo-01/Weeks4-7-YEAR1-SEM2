@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class FabMaker : MonoBehaviour
 {
+    //fab spawner and also tracks eye and mushroom numbers
     public GameObject bigEye;
     public GameObject bigMush;
     public int eyeCount;
     public int mushCount;
+
+    public SoupColor soupControl;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +21,7 @@ public class FabMaker : MonoBehaviour
         
     }
 
+    //spawn eye and mush at a set Y level, with a slightly random X value (so it looks more satisfying when spammed)
     public void SpawnEye()
     {
         Vector2 vector2 = transform.position;
@@ -37,4 +41,16 @@ public class FabMaker : MonoBehaviour
 
         mushCount += 1;
     }
+
+    public void RestartPotion()
+    {
+        //reset variables and counts to default
+        mushCount = 0;
+        eyeCount = 0;
+        soupControl.healP = false;
+        soupControl.manaP = false;
+        soupControl.loveP = false; 
+    }
+
+
 }

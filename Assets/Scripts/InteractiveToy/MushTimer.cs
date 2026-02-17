@@ -16,6 +16,7 @@ public class MushTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //same logic on eyeTimer; reference it for comments/explanation
         timerV += Time.deltaTime;
 
         Vector3 spin = transform.eulerAngles;
