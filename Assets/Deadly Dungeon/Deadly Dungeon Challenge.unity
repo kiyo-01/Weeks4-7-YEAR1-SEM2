@@ -1231,8 +1231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stone: {fileID: 1321300777}
-  lara: {fileID: 0}
-  stonesy: {fileID: 0}
+  lara: {fileID: 8699610323487663052}
+  stonesy: {fileID: 1321300776}
   speed: 0.025
   isRolling: 0
   deathByStone:
